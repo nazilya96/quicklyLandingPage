@@ -1,0 +1,56 @@
+@import '_variable.scss';
+@import '_mixins.scss';
+@import '_extends.scss';
+
+
+.feature_blocks {
+    .powerfully_blocks {
+        .powerfull-box1 {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            h4 {
+                font-size: 40px;
+                font-weight: 700;
+                color: $main-dark-color;
+                margin-bottom: 25px;
+            }
+            p {
+                color: $main-dark-color;
+                font-size: 16px;
+                margin-bottom: 40px;
+                // letter-spacing: 2px;
+                word-spacing: 1px
+            }
+            .btn-email {
+                @include buttonSign;
+                border-radius: 7px
+            }
+        }
+        .powerfull-box2 {
+            margin-top: 60px;
+            .powerfull-boxes {
+                margin-top: 20px;
+                .mini-box {
+                    margin-right: 40px;
+                    i {
+                        font-size: 17px;
+                        font-weight: 500;
+                        padding: 15px;
+                        border-radius: 10px;
+                        background-color: $main-light-color;
+                        color: $main-green-color;
+                        margin-bottom: 10px;
+                    }
+                    .box2-tittle {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .box2-text {
+                        font-size: 13px;
+    
+                    }
+                }
+            }
+        }
+    }
+}

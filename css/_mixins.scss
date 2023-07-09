@@ -1,0 +1,14 @@
+@mixin Center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin buttonSign(){
+    background-color: rgba(32, 72, 79, 1);
+    color: #fff;
+    border: none;
+    padding: 12.5px 28px;
+    border-radius: 2px 7px 7px 2px;
+}
