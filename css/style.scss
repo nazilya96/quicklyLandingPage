@@ -54,3 +54,85 @@
         }
     }
 }
+
+.metrics_block {
+    background-color: $main-light-color;
+    padding: 60px 0;
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        color: $main-dark-color;
+        margin-bottom: 13px;
+    }
+    .metric-text {
+        font-size: 16px;
+        color: $main-dark-color;
+        font-weight: 400;
+        margin-bottom: 35px;
+    }
+    .metric-boxes {
+        background-color: $main-dark-color;
+        width: 255px;
+        height: 329px;
+        border-radius: 25px;
+        margin-right: 40px;
+        .metric-box1 {
+            padding: 25px;
+            .number {
+                font-size: 64px;
+                font-weight: 700;
+                color: $main-light-color;
+            }
+            .metric-texts {
+                margin-top: 130px;
+                .metric-tittle {
+                    font-size: 17px;
+                    color: $main-light-color;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+                .metric-texta {
+                    color: $main-light-color;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.quotes_block {
+    background: url(../img/background-photo.png) center center/cover no-repeat;
+    height: 557px;
+    .quotes-section {
+        position: relative;
+        .qoutes-box {
+            background-color: #fff;
+            height: 435px;
+            width: 590px;
+            border-radius: 20px;
+            padding: 40px;
+            position: absolute;
+            top: 60px;
+            h4 {
+                font-size: 32px;
+                color: $main-dark-color;
+                font-weight: 700;
+            }
+            .quotes-texts {
+                margin-top: 140px;
+                .quotes-tittle {
+                    font-size: 17px;
+                    color: $main-dark-color;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+                .quotes-texta {
+                    color: $main-dark-color;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
