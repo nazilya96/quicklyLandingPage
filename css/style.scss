@@ -13,6 +13,20 @@
                 font-weight: 700;
                 color: $main-dark-color;
                 margin-bottom: 25px;
+                width: 60%;
+
+                @media only screen and (max-width: 1024px) {
+                    flex-direction: column;
+                    width: 80%;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 568px) {
+                    text-align: center;
+                }
             }
             p {
                 color: $main-dark-color;
@@ -23,12 +37,21 @@
             }
             .btn-email {
                 @include buttonSign;
-                border-radius: 7px
+                border-radius: 7px;
             }
         }
         .powerfull-box2 {
             margin-top: 60px;
+
+            @media only screen and (max-width: 1024px) {
+                margin-top: 0;
+            }
             .powerfull-boxes {
+
+                @media only screen and (max-width: 568px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
                 margin-top: 20px;
                 .mini-box {
                     margin-right: 40px;
@@ -40,6 +63,13 @@
                         background-color: $main-light-color;
                         color: $main-green-color;
                         margin-bottom: 10px;
+
+
+                        @media only screen and (max-width: 768px) {
+                            margin-right: 0;
+                            margin-bottom: 30px;
+                            text-align: center;
+                        }
                     }
                     .box2-tittle {
                         font-size: 14px;
@@ -51,6 +81,10 @@
                     }
                 }
             }
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
         }
     }
 }
@@ -102,8 +136,14 @@
 }
 
 .quotes_block {
-    background: url(../img/background-photo.png) center center/cover no-repeat;
+    background: url(../img/bg-photo.jpg) center center/cover no-repeat;
     height: 557px;
+    // width: 100%;
+
+    @media only screen and (min-width: 1024px) {
+        width: 100%;
+    }
+    
     .quotes-section {
         position: relative;
         .qoutes-box {
@@ -136,3 +176,177 @@
         }
     }
 }
+
+// .ctas_blocks {
+//     .background-top {
+//         background: url(../img/cta-divider.png) center center/cover no-repeat;
+//     // height: 400px;
+//     }
+//     .background-bottom {
+//         // background: url(../img/cta-bottom.png) center center/cover no-repeat;
+//         // height: 400px;
+//     }
+   
+// }
+
+
+
+.images_blocks {
+
+    .image-tittle {
+        margin: 60px 0;
+        @include Center();
+        justify-content: space-between;
+        text-align: start;
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            flex-direction: column;
+        }
+
+        h4 {
+            color: $main-dark-color;
+            font-size: 40px;
+            font-weight: 700;
+            width: 40%;
+
+            @media only screen and (max-width: 1024px) {
+                width: 73%;
+            }
+
+            @media only screen and (max-width: 992px) {
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .btn-email {
+            @include buttonSign;
+            border-radius: 7px;
+
+            @media only screen and (max-width: 992px) {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .images {
+        overflow: hidden;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        .image-top1 {
+            overflow: hidden;
+        }
+
+        .image-bottom3 {
+            margin-top: 15px;
+            column-gap: 15px;
+            overflow: hidden;
+
+
+            @media only screen and (max-width: 992px) {
+                justify-content: center;
+            }
+
+            .images-bottom {
+                width: 183px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                overflow: hidden;
+            }
+        }
+        // .bottom-image5 {
+        //     // margin-left: 40px;
+        //     border-radius: 7px;
+        //     width: 90%;
+        // }
+    }
+
+    .block-images-text {
+
+        .block-img-text {
+            border-radius: 8px;
+            padding: 60px;
+            margin-bottom: 11px;
+            background:#fafafa;
+            
+
+            @media only screen and (max-width: 992px) {
+                margin-top: 15px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                padding: 32px;
+            }
+
+            .txt {
+                color: $main-dark-color;
+                font-size: 21px;
+                padding-bottom: 44px;
+
+
+                @media only screen and (max-width: 425px) {
+                    font-size: 16px;
+                }
+            }
+
+            .read-more{
+                a {
+                    text-decoration: underline;
+                    color: $main-dark-color;
+                }
+            }
+        }
+
+        .bottom-image6 {
+           
+            img {
+                margin-top: 45px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// .carousel {
+//     .carousel-inner {
+//         .qoutes-box {
+//             background-color: #fff;
+//             height: 435px;
+//             width: 590px;
+//             border-radius: 20px;
+//             padding: 40px;
+//             position: absolute;
+//             top: 60px;
+//             h4 {
+//                 font-size: 32px;
+//                 color: $main-dark-color;
+//                 font-weight: 700;
+//             }
+//             .quotes-texts {
+//                 margin-top: 140px;
+//                 .quotes-tittle {
+//                     font-size: 17px;
+//                     color: $main-dark-color;
+//                     font-weight: 700;
+//                     margin-bottom: 8px;
+//                 }
+//                 .quotes-texta {
+//                     color: $main-dark-color;
+//                     font-size: 13px;
+//                     margin-bottom: 10px;
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -102,7 +102,7 @@ header {
 
 /* hero section start */
 .hero {
-    background-color: rgb(226, 218, 218);
+    background-color: #f1f0f0;
     height: 600px;
     /* margin: 0 auto; */
 }
@@ -368,14 +368,27 @@ input[type="text"]::placeholder {
 
 
 
-
-
-
-
-
 @media (max-width: 992px) {
     .navbar .log_btns {
         display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .hero {
+        height: auto;
+    }
+    .hero_right {
+        /* margin-left: 0; */
+        display: flex;
+        /* flex-direction: column; */
+
+    }
+
+    .right-box {
+        text-align: center;
     }
 }
 
