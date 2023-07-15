@@ -127,6 +127,12 @@ header {
     .dropdown_menu {
         display: block;
     }
+    .signup_btn {
+        display: none;
+    }
+    .login_btn {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
