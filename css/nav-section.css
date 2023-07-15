@@ -99,3 +99,36 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 528px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+        color: #ffffffae;
+    }
+    .navbar .toggle_btn:hover {
+        color: #fff;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .signup_btn {
+        display: none;
+    }
+    .login_btn {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
