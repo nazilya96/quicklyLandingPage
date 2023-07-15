@@ -102,12 +102,13 @@ header {
 
 
 
+
+
 @media (max-width: 528px) {
     .navbar .links {
         display: none;
     }
 
-    
     .navbar .toggle_btn {
         display: block;
         color: #ffffffae;
@@ -118,13 +119,6 @@ header {
 
     .dropdown_menu {
         display: block;
-    }
-
-    .signup_btn {
-        display: none;
-    }
-    .login_btn {
-        display: none;
     }
 }
 
