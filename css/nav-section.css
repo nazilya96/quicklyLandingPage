@@ -101,11 +101,13 @@ header {
 }
 
 
+
 @media (max-width: 528px) {
     .navbar .links {
         display: none;
     }
 
+    
     .navbar .toggle_btn {
         display: block;
         color: #ffffffae;
