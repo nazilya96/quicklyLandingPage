@@ -103,6 +103,13 @@ header {
 
 
 
+@media (max-width: 992px) {
+    .navbar .log_btns {
+        display: none;
+    }
+}
+
+
 
 @media (max-width: 528px) {
     .navbar .links {
